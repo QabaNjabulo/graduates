@@ -6,8 +6,8 @@ export class ApiAccessStatusEntity {
     userID!: string;
 
     @Field()
-    item!: string;
+    item!: string; // CV, Transcript, Academic Record, Certificates, Capstone Project
 
     @Field()
-    accessStatus: string;
+    accessStatus: string; // download: access granted, private: access denied, pending: not reviewed yet
 }
