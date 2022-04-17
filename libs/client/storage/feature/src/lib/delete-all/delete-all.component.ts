@@ -23,13 +23,6 @@ export class DeleteAllComponent implements OnInit {
     })
   }
 
-<<<<<<< HEAD
-||||||| 569687cf
-  delBut(){
-    alert("Delete all button works!!!");
-  }
-
-=======
   delBut(){
 
     for (let index = 1; index < 4; index++) {
@@ -64,5 +57,4 @@ export class DeleteAllComponent implements OnInit {
     }
   }
 
->>>>>>> 006507d2d4dd612e235c3437e6ca32dc143e57bf
 }
