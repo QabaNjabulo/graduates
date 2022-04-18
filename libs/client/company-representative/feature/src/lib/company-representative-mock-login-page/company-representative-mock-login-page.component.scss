@@ -188,4 +188,21 @@ footer{
       position:absolute;
   }
 }
+<<<<<<< HEAD
 // footer scss end
+||||||| 0fcdbe12
+=======
+
+button:disabled,
+button[disabled]{
+  background-color: #cccccc;
+  color: #666666;
+}
+
+button:disabled:hover,
+button[disabled]:hover {
+  background-color: #cccccc;
+  color: #666666;
+  cursor:default;
+}
+>>>>>>> 47d81b5cd23036d60776e518bea209416d577121

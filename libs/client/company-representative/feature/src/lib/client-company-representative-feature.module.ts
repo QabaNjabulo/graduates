@@ -8,10 +8,12 @@ import { CompanyRepresentativeMockStudentExplorePageComponent } from './company-
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { CompanyRepresentativeEditPageComponent } from './company-representative-edit-page/company-representative-edit-page.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   imports: [
     CommonModule,
+    MatIconModule,
     MatCardModule,
     MatButtonModule,
     MatMenuModule,

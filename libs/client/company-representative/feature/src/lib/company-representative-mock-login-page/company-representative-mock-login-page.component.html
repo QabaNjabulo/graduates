@@ -11,6 +11,7 @@
 </header>
 <!-- Header end -->
 <div class="login-div">
+<<<<<<< HEAD
   <mat-card class="login-card">
     <form action="">
       <label for="email"> Email: </label>
@@ -19,9 +20,36 @@
       <input type="password" class="inputCss"/> <br> <br>
       <a>Forgot Password?</a>
     </form>
+||||||| 0fcdbe12
+<mat-card class="login-card">
+  <form [formGroup]="formdata" (ngSubmit)="submit(formdata.value)">
+    <label for="email"> Email: </label>
+    <input type="email" class="inputCss required" formControlName="email" placeholder="Enter email..."/> <br> <br>
+    <label for="password">Password: </label>
+    <input type="password" class="inputCss" required formControlName="password" placeholder="Enter password..."/> <br> <br>
+    <a>Forgot Password?</a>
+=======
+<mat-card class="login-card">
+  <h1>GRADUATE PORTAL LOGIN</h1>
+  <form [formGroup]="formdata" (ngSubmit)="submit(formdata.value)">
+    <label for="email"> Email: </label>
+    <input type="email" class="inputCss required" formControlName="email" placeholder="Enter email..."/> <br> <br>
+    <label for="password">Password: </label>
+    <input type="password" class="inputCss" required formControlName="password" placeholder="Enter password..."/> <br> <br>
+>>>>>>> 47d81b5cd23036d60776e518bea209416d577121
     <br>
+<<<<<<< HEAD
     <button class="btn btn-primary" (click)="navigateToFirst()">Login</button>
   </mat-card>
+||||||| 0fcdbe12
+    <button class="btn btn-primary" type="submit">Login</button>
+  </form>
+</mat-card>
+=======
+    <button [disabled]="!formdata.valid" class="btn btn-primary" type="submit">Login</button>
+  </form>
+</mat-card>
+>>>>>>> 47d81b5cd23036d60776e518bea209416d577121
 </div>
 <!-- Footer start -->
 <footer>

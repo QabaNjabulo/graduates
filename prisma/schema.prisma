@@ -395,7 +395,13 @@ enum Item {
   ACADEMIC_RECORD
   CV
   TRANSCRIPT
+<<<<<<< HEAD
   CERTFICATE
+||||||| 0fcdbe12
+  CERTIFICATE
+=======
+  CERTIFICATES
+>>>>>>> 47d81b5cd23036d60776e518bea209416d577121
   CAPSTONE_PROJECT
 }
 
@@ -421,8 +427,7 @@ model UserContactNumber {
 model UserExperience {
   userId      String @id  @map("user_id")
   experience  String
-
+  
   user User @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   @@map("user_experience")
 }
-
