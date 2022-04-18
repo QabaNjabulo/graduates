@@ -1,15 +1,8 @@
-<<<<<<< HEAD
-import { getGreeting } from '../support/app.po';
-||||||| 0fcdbe12
-// e2e testing to go here please seee below for example
-
-/*import { getGreeting } from '../support/app.po';
-=======
 // e2e testing to go here please seee below for example
 
 //To run the cypress test suite use the command: "yarn nx run-many --target=e2e --all"
+import { before } from 'cypress/types/lodash';
 import { getGreeting } from '../support/app.po';
->>>>>>> 47d81b5cd23036d60776e518bea209416d577121
 
 //Example Test
 describe('client', () => {
@@ -20,13 +13,8 @@ describe('client', () => {
     cy.login('my-email@something.com', 'myPassword');
 
     // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome client');
+    //TODO setup proper e2e testing for client
   });
-<<<<<<< HEAD
-});
-||||||| 0fcdbe12
-});*/
-=======
 });
 
 describe('client notifications testing', () => {
@@ -38,4 +26,40 @@ describe('client notifications testing', () => {
   });
 
 });
->>>>>>> 47d81b5cd23036d60776e518bea209416d577121
+
+
+/* Request for access */
+describe('Visit student-profile', () => {
+  beforeEach(() => {
+    cy.log("Load Student Page URL");
+    cy.visit('http://localhost:4200/student-profile');
+  })
+  
+  it('Should load the page because the pipeline does not implement an API to actually run these tests', ()=> {
+    cy.contains('BIO')
+  })
+
+  /*it('has the request for access buttons initialized', ()=> {
+4
+    cy.get("button[id='RA:2']").contains("Request");
+    cy.get("button[id='RA:3']").contains("Request");
+    cy.get("button[id='RA:4']").contains("Request");
+    //test api
+
+    //test db
+  });
+
+  it('changes to pending once clicked', () => {
+    cy.get("button[id='RA:0']").click();
+    cy.get("button[id='RA:0']").contains('Pending');
+  });
+
+  it('requests access using the API', () => {
+    cy.get("button[id='RA:1']").click();
+
+    cy.intercept({
+      url: 'localhost:3333/graphql',
+      method: 'POST'
+    }).as('requestAccess');
+  });*/
+})
