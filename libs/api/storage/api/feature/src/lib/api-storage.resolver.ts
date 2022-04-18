@@ -27,7 +27,7 @@ export class ApiStorageResolver {
 
   }
 
-  @Query(() =>String)
+  @Mutation(() =>String)
   async delete(
     @Args("userId")userID:string,
     @Args("fileCategory")fileCategory:string
@@ -42,14 +42,14 @@ export class ApiStorageResolver {
   }
 
   //TODO fix return type
-  @Mutation(returns => String)
+  @Mutation(returns =>Boolean)
   async upload(
     @Args("filename")fileName:string,
     @Args("userId")userID:string,
     @Args("fileCategory")fileCategory:string,
     @Args("fileExtension")fileExtension:string,
     @Args('file') file:string
-  ): Promise<boolean|ApiStorageInput|string> {
+  ): Promise<boolean> {
 
       const storage = new ApiStorage();
       storage.fileAsString = file.substring(file.indexOf(',')+1,file.length);
@@ -79,6 +79,11 @@ export class ApiStorageResolver {
 
       return ret;
 }
+@Query(() =>String)
+  pingStorage(){
+    return "on";
+  }
+
 
 }
 

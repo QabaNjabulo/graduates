@@ -48,11 +48,11 @@ export class ApiRequestAccessResolver {
 =======
     async requestAccess(@Args('compId', { type: () => ID }) compId: string, @Args('gradId', { type: () => ID }) gradId: string, @Args('item') item: string): Promise<ApiRequestAccessEntity> {
         enum Items { // if new items become available add here
-            CV = "CV",
-            Transcript = "Transcript",
-            Academic = "Academic",
-            Certificates = "Certificates",
-            Capstone = "Capstone"
+            CV,
+            TRANSCRIPT,
+            ACADEMIC_RECORD,
+            CERTIFICATES,
+            CAPSTONE_PROJECT
         };
 
         if (compId == "" || gradId == "" || item == "") // obviously empty elements are not allowed

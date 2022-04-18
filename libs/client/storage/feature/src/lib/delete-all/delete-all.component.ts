@@ -42,9 +42,9 @@ export class DeleteAllComponent implements OnInit {
         this.fileCategory = "CV";
       }
 
-      this.apollo.query<any>({
-        query: gql`
-          query( $UserId: String! , $FileCategory: String!) {
+      this.apollo.mutate<any>({
+        mutation: gql`
+          mutation( $UserId: String! , $FileCategory: String!) {
             delete( userId: $UserId , fileCategory:$FileCategory )
           }
         `,
@@ -62,6 +62,7 @@ export class DeleteAllComponent implements OnInit {
         });
       
     }
+    window.location.href ="storage/"+this.userID;
   }
 
 >>>>>>> 006507d2d4dd612e235c3437e6ca32dc143e57bf
