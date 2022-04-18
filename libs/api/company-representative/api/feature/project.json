@@ -1,7 +1,6 @@
 {
   "root": "libs/api/company-representative/api/feature",
   "sourceRoot": "libs/api/company-representative/api/feature/src",
-  "projectType": "library",
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",

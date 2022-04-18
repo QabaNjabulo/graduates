@@ -1,7 +1,6 @@
 {
   "root": "libs/api/hosting/service/feature",
   "sourceRoot": "libs/api/hosting/service/feature/src",
-  "projectType": "library",
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",

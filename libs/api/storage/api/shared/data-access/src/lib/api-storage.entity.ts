@@ -1,16 +1,22 @@
 import { Field, ID, ObjectType } from '@nestjs/graphql';
-import { FileCategory } from '@prisma/client';
 
 @ObjectType()
 export class ApiStorage {
   @Field(() => ID)
-  userId!: string;
-  @Field(()=> FileCategory)
-  fileCategory!: FileCategory;
-  @Field()
-  fileExtension!: string;
-  @Field({ nullable: true})
-  filePath!: string;
-  @Field({ nullable: true})
-  fileAsString!: string;
+  id!: string;
+
+  @Field(() => Boolean)
+  cv!: boolean;
+
+  @Field(() => Boolean)
+  transcript!: boolean;
+
+  @Field(() => Boolean)
+  academicRecord!: boolean;
+
+  @Field(() => Boolean)
+  certificate!: boolean;
+
+  @Field(() => Boolean)
+  letterOfRecommendation!: boolean;
 }

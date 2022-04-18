@@ -20,7 +20,7 @@ COPY . .
 ENV PORT=3333
 
 # Expose the PORT
-EXPOSE 3333
+EXPOSE ${PORT}?
 
 # Start the client application
 CMD ["yarn", "start:api"]

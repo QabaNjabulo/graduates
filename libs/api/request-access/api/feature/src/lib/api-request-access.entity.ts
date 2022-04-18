@@ -9,6 +9,5 @@ export class ApiRequestAccessEntity {
     companyID!: string;
 
     @Field()
-    item!: string; // CV, Transcript, Academic, Certificates, Capstone // note some of the names have been shortand and the full names are below
-                  // CV, Transcript, Academic Record, Certificates, Capstone Project
+    item!: string;
 }

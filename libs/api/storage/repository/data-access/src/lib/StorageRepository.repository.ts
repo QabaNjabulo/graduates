@@ -45,7 +45,7 @@ export class StorageRepository {
           fileCategory: file_type
       }
     }).then(async (value) => {
-        if(value.length>0)
+        if(value)
         {
         await this.firebaseService.getURLByFilePath(value[0].filePath).then(async (value)=> {
           ret = value;

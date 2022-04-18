@@ -19,7 +19,6 @@ import {CompanyDetailsEditComponent} from './editing-page/company-details-edit/c
 import {RepresentativeEditListComponent} from './editing-page/representative-list-edit/representative-list-edit.component';
 import {SocialMediaEditComponent} from './editing-page/social-media-edit/social-media-edit.component';
 import {ButtonComponent} from '../../../../shared/components/buttons/ui/src/lib/button/button.component';
-import {MatButtonModule} from '@angular/material/button';
 // import {ApicompanyprofilepageServiceFeatureModule} from '@graduates/api/companyprofilepage/service/feature';
 
 @NgModule({
@@ -30,7 +29,7 @@ import {MatButtonModule} from '@angular/material/button';
     FormsModule,
     MatIconModule,
     ReactiveFormsModule,
-    MatButtonModule,
+    
     HeaderModule,
     FooterModule,
   ],

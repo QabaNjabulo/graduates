@@ -17,8 +17,7 @@
         "assets": [
           "apps/client/src/favicon.ico",
           "apps/client/src/assets",
-          "apps/client/src/manifest.webmanifest",
-          "apps/client/src/custom-service-worker.js"
+          "apps/client/src/manifest.webmanifest"
         ],
         "styles": ["apps/client/src/styles.scss"],
         "scripts": [],

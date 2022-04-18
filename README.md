@@ -2,7 +2,6 @@
 
 The Graduates Portal for The Computer Science Department at The University of Pretoria.
 
-[![](https://github.com/COS-301/graduates/actions/workflows/index.yml/badge.svg)](https://github.com/COS-301/graduates/actions/workflows/index.yml)
 ## Basic Scripts
 
 These are essential scripts to get started:

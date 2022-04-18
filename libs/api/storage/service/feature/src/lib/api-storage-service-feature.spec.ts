@@ -1,3 +1,42 @@
+<<<<<<< HEAD
+import { Test } from '@nestjs/testing';
+import { ApiStorageServiceFeatureModule } from './api-storage-service-feature';
+
+describe( 'ApiStorageServiceFeatureModule', () => {
+  let service: ApiStorageServiceFeatureModule;
+
+  beforeEach(async () => {
+    const module = await Test.createTestingModule({
+      providers: [ ApiStorageServiceFeatureModule],
+    }).compile();
+
+    service = module.get (ApiStorageServiceFeatureModule);
+  });
+
+  it('should be defined', () => {
+    expect(service).toBeTruthy();
+  });
+});
+||||||| 569687cf
+import { Test } from '@nestjs/testing';
+import { ApiStorageServiceFeatureModule } from './api-storage-service-feature';
+
+describe( 'ApiStorageServiceFeatureModule', () => {
+  let service: ApiStorageServiceFeatureModule;
+
+  beforeEach(async () => {
+    const module = await Test.createTestingModule({
+      providers: [ ApiStorageServiceFeatureModule],
+    }).compile();
+
+    service = module.get (ApiStorageServiceFeatureModule);
+  });
+
+  it('should be defined', () => {
+    expect(service).toBeTruthy();
+  });
+});
+=======
 import { Test, TestingModule } from '@nestjs/testing';
 import { ApiStorageServiceFeatureModule } from './api-storage-service-feature';
 import { ApiStorage , ApiStorageInput } from '@graduates/api/storage/api/shared/data-access';
@@ -170,3 +209,4 @@ describe( 'Student Service', () => {
 
 
 
+>>>>>>> 006507d2d4dd612e235c3437e6ca32dc143e57bf

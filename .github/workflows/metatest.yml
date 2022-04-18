@@ -2,8 +2,12 @@
 name: 'Meta Test'
 
 on: 
+  workflow_call:
   pull_request:
-    types: [ opened, reopened, labeled ]
+    types: [ labeled ]
+
+  milestone:
+    types: [ opened ]
 
 jobs:
   label-check:

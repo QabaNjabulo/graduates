@@ -1,1 +1,1 @@
-export * from './lib/api-notifications-repository-data-access.repository';
+export * from './lib/api-notifications-repository-data-access.module';

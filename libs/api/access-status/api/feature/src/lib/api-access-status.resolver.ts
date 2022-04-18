@@ -6,6 +6,18 @@ import { AccessStatusService } from "@graduates/api/access-status/service/featur
 export class ApiAccessStatusResolver {
     constructor(private accessStatusService: AccessStatusService) {}
 
+<<<<<<< HEAD
+    @Query(returns => [ApiAccessStatusEntity])
+    async status(@Args('compID', { type: () => ID }) id: string): Promise<ApiAccessStatusEntity[]> {
+        return this.accessStatusService.getAll(id);
+||||||| 569687cf
+    @Query(returns => [ApiAccessStatusEntity], { nullable: true })
+    async status(@Args('compId', { type: () => ID }) compId: string, @Args('gradId', { type: () => ID }) gradId: string): Promise<ApiAccessStatusEntity[]> {
+        if (compId == "" || gradId == "") // obviously empty elements are not allowed
+            return null;
+
+        return this.accessStatusService.getAll(compId, gradId);
+=======
     @Query(returns => [ApiAccessStatusEntity], { nullable: true })
     async status(@Args('compId', { type: () => ID }) compId: string, @Args('gradId', { type: () => ID }) gradId: string): Promise<ApiAccessStatusEntity[]> {
         if (compId == "" || gradId == "") // obviously empty elements are not allowed
@@ -36,5 +48,6 @@ export class ApiAccessStatusResolver {
     @Query(() =>String) 
     pingAccessStatus(){
       return "on";
+>>>>>>> 006507d2d4dd612e235c3437e6ca32dc143e57bf
     }
 }

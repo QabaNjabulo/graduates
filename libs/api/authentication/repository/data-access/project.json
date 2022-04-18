@@ -1,7 +1,6 @@
 {
   "root": "libs/api/authentication/repository/data-access",
   "sourceRoot": "libs/api/authentication/repository/data-access/src",
-  "projectType": "library",
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",

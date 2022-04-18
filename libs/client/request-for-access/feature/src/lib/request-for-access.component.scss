@@ -1,29 +1,44 @@
-@import 'libs/client/shared/assets/ui/src/lib/global.scss';
-
-@mixin minHeight {
-  @media (max-height: 500px) {
-    @content;
-  }
-}
+@import '../../../../shared/assets/global.scss';
 
 #rfa-container {
+  //style rules which apply regardless of screen size
+
   height: 40vh;
-  width: 90vw;
-  margin: 10px;
+  min-width: fit-content;
+  border: 1px solid green;
+  transition: width 0.1s ease-out;
 
   @include desktop {
     width: 25vw;
   }
 
   @include tablet {
+    //style rules which only apply to tablet displays
+    width: 90vw;
     margin: auto;
   }
 
   @include phone {
+    //style rules which only apply to phone displays
+    width: 90vw;
     margin: auto;
   }
 }
 
+<<<<<<< HEAD
+.button {
+  float: right;
+||||||| 569687cf
+button {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 5vh;
+  width: 112px;
+
+  @include minHeight {
+    height: 30px;
+  }
+=======
 button {
   color: #FFFFFF;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -41,6 +56,7 @@ button {
   @include minHeight {
     height: 30px;
   }
+>>>>>>> 006507d2d4dd612e235c3437e6ca32dc143e57bf
 }
 button:hover {
   color: #174372;
@@ -68,14 +84,18 @@ h3 {
 
 .row {
   height: 7.8vh;
-  @include minHeight {
-    height: 40px;
-  }
 }
 
 .item {
   width: 150px;
 }
+<<<<<<< HEAD
+||||||| 569687cf
+
+.pendingIcon {
+  margin-left: 3px;
+}
+=======
 
 .pendingIcon {
   margin-left: 3px;
@@ -85,3 +105,4 @@ h3 {
 .downloadIcon {
   color: $notification-green;
 }
+>>>>>>> 006507d2d4dd612e235c3437e6ca32dc143e57bf

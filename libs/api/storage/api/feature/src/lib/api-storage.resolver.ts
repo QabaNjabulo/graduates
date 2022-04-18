@@ -83,11 +83,6 @@ export class ApiStorageResolver {
 
       return ret;
 }
-@Query(() =>String)
-  pingStorage(){
-    return "on";
-  }
-
 
 }
 

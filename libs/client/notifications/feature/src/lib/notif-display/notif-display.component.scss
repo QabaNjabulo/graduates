@@ -55,9 +55,22 @@ button {
 .notification-card {
   justify-content: center;
   width: 70%;
+<<<<<<< HEAD
+  margin-top: 2%;
+||||||| 569687cf
+  top: 15%;
+  left: 15%;
+  position: absolute;
+=======
   left: 15%;
   margin-top: 5%;
+>>>>>>> 006507d2d4dd612e235c3437e6ca32dc143e57bf
   background: #ECECEC;
+  height: flex;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;  
+  vertical-align:middle;
   color: white;
 }
 
@@ -65,8 +78,7 @@ button {
   .notification-card {
     justify-content: center;
     width: 95%;
-    top: 7%;
-    left: 2%;
+    margin-top: 2%;
   }
 
   .mat-icon {
