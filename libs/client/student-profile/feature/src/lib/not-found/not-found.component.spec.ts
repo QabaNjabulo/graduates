@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LoginFeatureComponent } from './login-feature.component';
+import { NotFoundComponent } from './not-found.component';
 
-describe('LoginFeatureComponent', () => {
-  let component: LoginFeatureComponent;
-  let fixture: ComponentFixture<LoginFeatureComponent>;
+describe('NotFoundComponent', () => {
+  let component: NotFoundComponent;
+  let fixture: ComponentFixture<NotFoundComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LoginFeatureComponent ]
+      declarations: [ NotFoundComponent ]
     })
     .compileComponents();
-  }); 
+  });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LoginFeatureComponent);
+    fixture = TestBed.createComponent(NotFoundComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

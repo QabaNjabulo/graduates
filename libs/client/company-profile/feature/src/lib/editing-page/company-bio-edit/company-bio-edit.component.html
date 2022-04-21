@@ -3,7 +3,15 @@
         <h2>Company Bio</h2>
         <mat-divider [inset]="true"></mat-divider>
         <br/>
+<<<<<<< HEAD
         <textarea matInput id="company_bio">{{bio}}</textarea>
         <graduates-button type="submit" style="float: right;" (click)="save()">Save</graduates-button>
+||||||| 00325d80
+        <textarea matInput id="company_bio">{{bio}}</textarea>
+        <button mat-button type="submit" style="float: right;" (click)="save()">Save</button>
+=======
+        <textarea matInput id="company_bio_edit"[(ngModel)] = "bio">{{bio}}</textarea>
+        <button mat-button type="submit" style="float: right;" (click)="save()">Save</button>
+>>>>>>> e6db0f6b5e186b22e656a8cb229ec2f7bbbbad4e
     <!-- </mat-form-field> -->
 </div>
